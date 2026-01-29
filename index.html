@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katedra Języka Niemieckiego</title>
+<style>
+* {margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+:root{--blue:#2F5D8A;}
+body{background:#dbe9f6;color:#333;line-height:1.8;}
+header{background:var(--blue);color:white;padding:25px 0;}
+.header-content{max-width:1000px;margin:auto;display:flex;align-items:center;gap:25px;padding:0 25px;}
+.logo{height:110px;border-radius:14px;}
+.header-text{text-align:center;flex:1;}
+nav a{color:white;text-decoration:none;margin:0 10px;font-weight:bold;}
+nav a:hover{text-decoration:underline;}
+.lang-switch{margin-top:10px;display:inline-block;}
+.lang-switch button{
+    background:white;color:var(--blue);border:none;margin:0 5px;padding:6px 12px;
+    font-size:12px;font-weight:bold;cursor:pointer;border-radius:6px;transition:all 0.3s;
+}
+.lang-switch button.active{
+    border:3px solid black;
+}
+.header-photo img{height:110px;width:110px;object-fit:cover;border-radius:14px;border:4px solid white;}
+section{background:white;max-width:1000px;margin:45px auto;padding:50px 30px;border-radius:40px;transition:opacity 0.3s;}
+h2{color:var(--blue);margin-bottom:25px;}
+.kursy{display:flex;gap:25px;flex-wrap:wrap;}
+.kurs{flex:1;min-width:280px;background:#f0f5fb;padding:25px;border-radius:25px;}
+.kurs h3{color:var(--blue);margin-bottom:10px;}
+.kadra-lista{padding-left:20px;}
+.kadra-lista li{margin-bottom:10px;}
+footer{background:var(--blue);color:white;text-align:center;padding:18px;}
+.fade{opacity:0.3;transition:opacity 0.3s;}
+a{color:var(--blue);text-decoration:none;}
+a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<header>
+<div class="header-content">
+<img src="images/logo.png" alt="Logo szkoły" class="logo">
+<div class="header-text">
+<h1 id="school-title">Katedra Języka Niemieckiego</h1>
+<nav>
+<a href="#o-nas" id="nav-onas">O nas</a>
+<a href="#kursy" id="nav-kursy">Kursy</a>
+<a href="#metoda" id="nav-metoda">Metoda</a>
+<a href="#kadra" id="nav-kadra">Kadra</a>
+<a href="#tlumaczenia" id="nav-tlumaczenia">Tłumaczenia</a>
+<a href="#kontakt" id="nav-kontakt">Kontakt</a>
+</nav>
+<div class="lang-switch">
+<button id="btn-pl" class="active">PL</button>
+<button id="btn-de">DE</button>
+<button id="btn-en">EN</button>
+</div>
+</div>
+<div class="header-photo">
+<img src="images/lektor.jpg" alt="Zdjęcie lektora">
+</div>
+</div>
+</header>
+
+<main>
+<section id="o-nas">
+<h2 id="onas-title">O nas</h2>
+<p id="onas-1">Witamy w „Katedrze Języka Niemieckiego”. Szkoła powstała w 2005 roku jako „Euroszkoła Języków Obcych i Informatyki – Biuro Tłumaczeń”, która mieściła się w Pabianicach przy ulicy św. Jana 7/9.</p>
+<p id="onas-2">Obecnie szkoła zajmuje się wyłącznie językiem niemieckim oraz tłumaczeniami, również przysięgłymi, i jest szkołą internetową – lekcje odbywają się wyłącznie online.</p>
+<p id="onas-3">Uczymy języka niemieckiego na wszystkich poziomach – od początkującego po zaawansowany. Naszym celem jest, aby nauka była efektywna.</p>
+</section>
+
+<section id="kursy">
+<h2 id="kursy-title">Kursy</h2>
+<div class="kursy">
+<div class="kurs"><h3 id="kurs-zielony-title">Kurs zielony</h3><p id="kurs-zielony-text">Kurs dla początkujących. 12 lekcji, możliwość ukończenia w jeden miesiąc (4 godziny tygodniowo). Test końcowy. Materiały wideo wyprodukowane przez QR TV Studio. Poziom porównywalny z A1.</p></div>
+<div class="kurs"><h3 id="kurs-niebieski-title">Kurs niebieski</h3><p id="kurs-niebieski-text">Kurs zaawansowany obejmujący pełną gramatykę języka niemieckiego, rozszerzone słownictwo, teksty tematyczne oraz ćwiczenia i testy po każdym rozdziale. Poziom porównywalny z C1.</p></div>
+<div class="kurs"><h3 id="kurs-czerwony-title">Kurs czerwony</h3><p id="kurs-czerwony-text">Zestaw tekstów z różnych dziedzin (Niemcy, Austria, Szwajcaria). Kurs utrwalający i poszerzający słownictwo. Bez zagadnień gramatycznych. Poziom porównywalny z C2.</p></div>
+</div>
+</section>
+
+<section id="metoda">
+<h2 id="metoda-title">Metoda</h2>
+<p id="metoda-1">Nasza oferta kierowana jest do osób, które naprawdę chcą nauczyć się języka niemieckiego. Metoda nauczania wykorzystuje w 90% pamięć logiczną uczącego się.</p>
+<p id="metoda-2"><strong>Nie realizujemy standardowych modeli nauczania języka niemieckiego w ramach DaF lub DaZ. Mamy własną, autorską, sprawdzoną od 2005 roku metodę nauczania języka niemieckiego.</strong></p>
+<p id="metoda-3">Grupy do 6 osób (2–3 lub 4–6). Możliwe są także lekcje indywidualne. Zniżki: 5%, 10% oraz 15%.</p>
+</section>
+
+<section id="kadra">
+<h2 id="kadra-title">Kadra</h2>
+<ul class="kadra-lista">
+<li id="kadra1">Wszyscy lektorzy posiadają stopień magistra (filologia germańska lub/i pedagogika).</li>
+<li id="kadra2">Wszyscy lektorzy ukończyli filologię germańską na poziomie minimum licencjatu.</li>
+<li id="kadra3">Wszyscy lektorzy mieszkają na terenie krajów niemieckojęzycznych.</li>
+</ul>
+</section>
+
+<section id="tlumaczenia">
+<h2 id="tlumaczenia-title">Tłumaczenia</h2>
+<p id="tlumaczenia-text">Poza nauką języka niemieckiego oferujemy profesjonalne tłumaczenia przysięgłe, pisemne oraz ustne, również z dojazdem, z języka niemieckiego na polski oraz z polskiego na niemiecki.</p>
+</section>
+
+<section id="kontakt">
+<h2 id="kontakt-title">Kontakt</h2>
+<p id="kontakt-info">
+Email: <a href="mailto:kontakt@szkola.pl" id="kontakt-email">kontakt@szkola.pl</a><br>
+Tel: <a href="tel:+48503345089" id="kontakt-tel">0048 503 345 089</a>
+</p>
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 Katedra Języka Niemieckiego</p>
+</footer>
+
+<script>
+const texts={
+pl:{
+"school-title":"Katedra Języka Niemieckiego","nav-onas":"O nas","nav-kursy":"Kursy","nav-metoda":"Metoda","nav-kadra":"Kadra","nav-tlumaczenia":"Tłumaczenia","nav-kontakt":"Kontakt",
+"onas-title":"O nas","onas-1":"Witamy w „Katedrze Języka Niemieckiego”. Szkoła powstała w 2005 roku jako „Euroszkoła Języków Obcych i Informatyki – Biuro Tłumaczeń”, która mieściła się w Pabianicach przy ulicy św. Jana 7/9.","onas-2":"Obecnie szkoła zajmuje się wyłącznie językiem niemieckim oraz tłumaczeniami, również przysięgłymi, i jest szkołą internetową – lekcje odbywają się wyłącznie online.","onas-3":"Uczymy języka niemieckiego na wszystkich poziomach – od początkującego po zaawansowany. Naszym celem jest, aby nauka była efektywna.",
+"kursy-title":"Kursy","kurs-zielony-title":"Kurs zielony","kurs-niebieski-title":"Kurs niebieski","kurs-czerwony-title":"Kurs czerwony",
+"kurs-zielony-text":"Kurs dla początkujących. 12 lekcji, możliwość ukończenia w jeden miesiąc (4 godziny tygodniowo). Test końcowy. Materiały wideo wyprodukowane przez QR TV Studio. Poziom porównywalny z A1.",
+"kurs-niebieski-text":"Kurs zaawansowany obejmujący pełną gramatykę języka niemieckiego, rozszerzone słownictwo, teksty tematyczne oraz ćwiczenia i testy po każdym rozdziale. Poziom porównywalny z C1.",
+"kurs-czerwony-text":"Zestaw tekstów z różnych dziedzin (Niemcy, Austria, Szwajcaria). Kurs utrwalający i poszerzający słownictwo. Bez zagadnień gramatycznych. Poziom porównywalny z C2.",
+"metoda-title":"Metoda","metoda-1":"Nasza oferta kierowana jest do osób, które naprawdę chcą nauczyć się języka niemieckiego. Metoda nauczania wykorzystuje w 90% pamięć logiczną uczącego się.","metoda-2":"<strong>Nie realizujemy standardowych modeli nauczania języka niemieckiego w ramach DaF lub DaZ. Mamy własną, autorską, sprawdzoną od 2005 roku metodę nauczania języka niemieckiego.</strong>","metoda-3":"Grupy do 6 osób (2–3 lub 4–6). Możliwe są także lekcje indywidualne. Zniżki: 5%, 10% oraz 15%.",
+"kadra-title":"Kadra","kadra1":"Wszyscy lektorzy posiadają stopień magistra (filologia germańska lub/i pedagogika).","kadra2":"Wszyscy lektorzy ukończyli filologię germańską na poziomie minimum licencjatu.","kadra3":"Wszyscy lektorzy mieszkają na terenie krajów niemieckojęzycznych.",
+"tlumaczenia-title":"Tłumaczenia","tlumaczenia-text":"Poza nauką języka niemieckiego oferujemy profesjonalne tłumaczenia przysięgłe, pisemne oraz ustne, również z dojazdem, z języka niemieckiego na polski oraz z polskiego na niemiecki.",
+"kontakt-title":"Kontakt","kontakt-email":"kontakt@szkola.pl","kontakt-tel":"0048 503 345 089"
+},
+de:{
+"school-title":"Katedra Języka Niemieckiego","nav-onas":"Über uns","nav-kursy":"Kurse","nav-metoda":"Methode","nav-kadra":"Team","nav-tlumaczenia":"Übersetzungen","nav-kontakt":"Kontakt",
+"onas-title":"Über uns","onas-1":"Willkommen in der „Katedra Języka Niemieckiego“. Die Schule wurde 2005 als „Euroszkoła Języków Obcych i Informatyki – Biuro Tłumaczeń“ gegründet und befand sich in Pabianice, św. Jana 7/9.","onas-2":"Heute beschäftigt sich die Schule ausschließlich mit der deutschen Sprache und Übersetzungen, einschließlich vereidigter, und ist eine Online-Schule – der Unterricht findet ausschließlich online statt.","onas-3":"Wir unterrichten Deutsch auf allen Niveaus – vom Anfänger bis Fortgeschrittenen. Unser Ziel ist effektives Lernen.",
+"kursy-title":"Kurse","kurs-zielony-title":"Grüner Kurs","kurs-niebieski-title":"Blauer Kurs","kurs-czerwony-title":"Roter Kurs",
+"kurs-zielony-text":"Kurs für Anfänger. 12 Lektionen, Abschluss innerhalb eines Monats möglich (4 Stunden/Woche). Abschlusstest. Videomaterial von QR TV Studio. Niveau vergleichbar mit A1.",
+"kurs-niebieski-text":"Fortgeschrittener Kurs, der die komplette deutsche Grammatik, erweiterten Wortschatz, thematische Texte sowie Übungen und Tests nach jedem Kapitel umfasst. Niveau vergleichbar mit C1.",
+"kurs-czerwony-text":"Sammlung von Texten aus verschiedenen Bereichen (Deutschland, Österreich, Schweiz). Kurs zur Festigung und Erweiterung des Wortschatzes. Keine Grammatikthemen. Niveau vergleichbar mit C2.",
+"metoda-title":"Methode","metoda-1":"Unser Angebot richtet sich an Personen, die Deutsch wirklich lernen möchten. Die Lehrmethode nutzt 90% des logischen Gedächtnisses des Lernenden.","metoda-2":"<strong>Wir verwenden keine standardmäßigen Modelle des Deutschunterrichts im Rahmen von DaF oder DaZ. Wir haben unsere eigene, originale, seit 2005 bewährte Methode zum Deutschlernen.</strong>","metoda-3":"Gruppen bis zu 6 Personen (2–3 oder 4–6). Einzelunterricht ebenfalls möglich. Rabatte: 5%, 10% und 15%.",
+"kadra-title":"Team","kadra1":"Alle Dozenten besitzen einen Masterabschluss (Germanistik und/oder Pädagogik).","kadra2":"Alle Dozenten haben mindestens einen Bachelorabschluss in Germanistik.","kadra3":"Alle Dozenten leben in deutschsprachigen Ländern.",
+"tlumaczenia-title":"Übersetzungen","tlumaczenia-text":"Neben dem Deutschunterricht bieten wir professionelle vereidigte Übersetzungen schriftlich und mündlich, auch mit Hausbesuch, vom Deutschen ins Polnische und vom Polnischen ins Deutsche an.",
+"kontakt-title":"Kontakt","kontakt-email":"kontakt@szkola.pl","kontakt-tel":"0048 503 345 089"
+},
+en:{
+"school-title":"Katedra Języka Niemieckiego","nav-onas":"About us","nav-kursy":"Courses","nav-metoda":"Method","nav-kadra":"Staff","nav-tlumaczenia":"Translations","nav-kontakt":"Contact",
+"onas-title":"About us","onas-1":"Welcome to the “Katedra Języka Niemieckiego”. The school was founded in 2005 as “Euroszkoła Języków Obcych i Informatyki – Biuro Tłumaczeń”, located in Pabianice at św. Jana 7/9.","onas-2":"Currently the school focuses exclusively on the German language and translations, including certified ones, and is an online school – lessons are held exclusively online.","onas-3":"We teach German at all levels – from beginner to advanced. Our goal is to make learning effective.",
+"kursy-title":"Courses","kurs-zielony-title":"Green Course","kurs-niebieski-title":"Blue Course","kurs-czerwony-title":"Red Course",
+"kurs-zielony-text":"Course for beginners. 12 lessons, can be completed within a month (4 hours/week). Final test. Video materials by QR TV Studio. Level comparable to A1.",
+"kurs-niebieski-text":"Advanced course covering complete German grammar, extended vocabulary, thematic texts and exercises/tests after each chapter. Level comparable to C1.",
+"kurs-czerwony-text":"A set of texts from various fields (Germany, Austria, Switzerland). Course for consolidating and expanding vocabulary. No grammar topics. Level comparable to C2.",
+"metoda-title":"Method","metoda-1":"Our offer is aimed at people who truly want to learn German. The teaching method uses 90% of the learner's logical memory.","metoda-2":"<strong>We do not follow standard German teaching models within the DaF or DaZ framework. We have our own original, proven method for learning German since 2005.</strong>","metoda-3":"Groups up to 6 people (2–3 or 4–6). Individual lessons also possible. Discounts: 5%,10%,15%.",
+"kadra-title":"Staff","kadra1":"All instructors hold a Master's degree (German studies and/or pedagogy).","kadra2":"All instructors have completed at least a Bachelor's in German studies.","kadra3":"All instructors live in German-speaking countries.",
+"tlumaczenia-title":"Translations","tlumaczenia-text":"Besides German lessons, we offer professional certified translations, written and oral, including on-site, from German to Polish and Polish to German.",
+"kontakt-title":"Contact","kontakt-email":"kontakt@szkola.pl","kontakt-tel":"0048 503 345 089"
+}
+};
+
+function setLanguage(lang){
+  const ids=[
+    "school-title","nav-onas","nav-kursy","nav-metoda","nav-kadra","nav-tlumaczenia","nav-kontakt",
+    "onas-title","onas-1","onas-2","onas-3",
+    "kursy-title","kurs-zielony-title","kurs-niebieski-title","kurs-czerwony-title",
+    "kurs-zielony-text","kurs-niebieski-text","kurs-czerwony-text",
+    "metoda-title","metoda-1","metoda-2","metoda-3",
+    "tlumaczenia-title","tlumaczenia-text",
+    "kadra-title","kadra1","kadra2","kadra3",
+    "kontakt-title","kontakt-email","kontakt-tel"
+  ];
+  ids.forEach(id=>{
+    const e=document.getElementById(id);
+    if(e){
+      e.classList.add("fade");
+      setTimeout(()=>{
+        if(id==="kontakt-email" || id==="kontakt-tel") e.textContent=texts[lang][id];
+        else e.innerHTML=texts[lang][id]||e.textContent;
+        e.classList.remove("fade");
+      },200);
+    }
+  });
+  document.querySelectorAll(".lang-switch button").forEach(b=>b.classList.remove("active"));
+  document.getElementById("btn-"+lang).classList.add("active");
+}
+
+document.getElementById("btn-pl").addEventListener("click",()=>setLanguage("pl"));
+document.getElementById("btn-de").addEventListener("click",()=>setLanguage("de"));
+document.getElementById("btn-en").addEventListener("click",()=>setLanguage("en"));
+
+// Domyślny język PL
+setLanguage("pl");
+</script>
+
+</body>
+</html>
